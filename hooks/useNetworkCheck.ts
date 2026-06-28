@@ -33,9 +33,9 @@ export function useNetworkCheck(address: string | null) {
 
   const check = useCallback(async () => {
     if (!address) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
+       
       setStatus('idle');
-      // eslint-disable-next-line react-hooks/set-state-in-effect
+       
       setWalletNetwork(null);
       return;
     }
@@ -71,7 +71,7 @@ export function useNetworkCheck(address: string | null) {
     if (!address) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setStatus('idle');
-      // eslint-disable-next-line react-hooks/set-state-in-effect
+       
       setWalletNetwork(null);
       return;
     }

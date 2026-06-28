@@ -27,12 +27,12 @@ interface UseProofUploadReturn {
   isCompressing: boolean;
   uploadedProofs: UploadedProof[];
   errors: string[];
-  // eslint-disable-next-line no-unused-vars
+   
   handleFileCapture: (_file: File) => Promise<void>;
-  // eslint-disable-next-line no-unused-vars
+   
   handleCameraCapture: (_canvas: HTMLCanvasElement) => Promise<void>;
   clearUploadedProofs: () => void;
-  // eslint-disable-next-line no-unused-vars
+   
   removeProof: (_filename: string) => void;
 }
 

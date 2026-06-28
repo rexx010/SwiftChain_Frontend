@@ -104,7 +104,7 @@ const OperationCard: React.FC<OperationCardProps> = ({
   onSign,
   canSign,
 }) => {
-  // eslint-disable-next-line react-hooks/purity
+   
   const daysUntilExpiry = Math.ceil(
     // eslint-disable-next-line react-hooks/purity
     (new Date(expiresAt).getTime() - Date.now()) / (1000 * 60 * 60 * 24)
